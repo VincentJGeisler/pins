@@ -1,0 +1,26 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0-noble
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    git-lfs \
+    rsync \
+    dpkg-dev \
+    nodejs \
+    npm \
+    curl \
+    wget \
+    gcc \
+    make \
+    tar \
+    bzip2 \
+    file \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /build
+
+# Copy source
+COPY . .
+
+# Build script will be run by docker-compose or manual docker run
+CMD ["/bin/bash"]

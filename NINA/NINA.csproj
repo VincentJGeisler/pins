@@ -59,10 +59,19 @@
     <Content Include="Database\Migration\10.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="External\$(RuntimeIdentifier)\ASI\libASICamera2.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="External\$(RuntimeIdentifier)\ASI\libEAFFocuser.so">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="External\$(RuntimeIdentifier)\ASI\libEFWFilter.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="External\$(RuntimeIdentifier)\Oasis\liboasisfocuser.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="External\$(RuntimeIdentifier)\Oasis\liboasisfilterwheel.so">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="External\$(RuntimeIdentifier)\ToupTek\libtoupcam.so">
